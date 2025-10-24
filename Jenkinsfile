@@ -3,8 +3,8 @@ pipeline {
 
     tools {
         jdk 'JDK_HOME'
-        maven 'MAVEN_HOME'
-        nodejs 'NODE_HOME'
+        maven 'Maven_3'
+        nodejs 'node20'
     }
 
     environment {
