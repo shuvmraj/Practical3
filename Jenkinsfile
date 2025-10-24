@@ -94,7 +94,10 @@ EOF
                 dir("${env.BACKEND_DIR}") {
                     sh '''
                         echo "Running Maven clean package..."
-                        export JAVA_HOME=${JAVA_HOME:-$(which java | xargs dirname | xargs dirname)}
+                        echo "JAVA_HOME is: $JAVA_HOME"
+                        echo "Java version:"
+                        $JAVA_HOME/bin/java -version
+                        
                         ./mvnw clean package -DskipTests
                         
                         echo "Build artifacts:"
