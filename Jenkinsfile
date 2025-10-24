@@ -2,14 +2,13 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK_HOME'
         maven 'Maven_3'
         nodejs 'node20'
     }
 
     environment {
         JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home'
-        PATH = "${JAVA_HOME}/bin:${PATH}"
+        PATH = "${JAVA_HOME}/bin:${JAVA_HOME}/bin:${PATH}"
         BACKEND_DIR = 'crud_backend/crud_backend-main'
         FRONTEND_DIR = 'crud_frontend/crud_frontend-main'
 
