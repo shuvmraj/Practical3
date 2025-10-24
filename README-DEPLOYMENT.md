@@ -241,14 +241,14 @@ kill -9 <PID>
 
 ---
 
-## 📝 Database Configuration
+## � Database Configuration
 
 Backend connects to:
 - **Host:** database-1.ckhoqoim0209.us-east-1.rds.amazonaws.com
 - **Port:** 3306
 - **Database:** cicd
-- **Username:** admin
-- **Password:** adminadmin
+- **Username:** root
+- **Password:** Shubham@16
 
 Configure in: `crud_backend/crud_backend-main/src/main/resources/application.properties`
 

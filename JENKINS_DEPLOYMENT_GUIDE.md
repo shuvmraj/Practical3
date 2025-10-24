@@ -104,8 +104,8 @@ Verify that your MySQL database is accessible:
 ```bash
 # Check backend application.properties for correct DB details:
 # - URL: jdbc:mysql://database-1.ckhoqoim0209.us-east-1.rds.amazonaws.com:3306/cicd
-# - Username: admin
-# - Password: adminadmin
+# - Username: root
+# - Password: Shubham@16
 ```
 
 ### Check 3: Local Build Test

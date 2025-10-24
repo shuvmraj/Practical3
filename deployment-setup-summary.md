@@ -242,8 +242,8 @@ Your backend connects to:
 - **Host:** database-1.ckhoqoim0209.us-east-1.rds.amazonaws.com
 - **Port:** 3306
 - **Database:** cicd
-- **User:** admin
-- **Password:** adminadmin
+- **User:** root
+- **Password:** Shubham@16
 
 Ensure this database is accessible from your network.
 
