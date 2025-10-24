@@ -8,7 +8,7 @@ pipeline {
     }
 
     environment {
-        JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home'
+        JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home'
         PATH = "${JAVA_HOME}/bin:${PATH}"
         BACKEND_DIR = 'crud_backend/crud_backend-main'
         FRONTEND_DIR = 'crud_frontend/crud_frontend-main'
