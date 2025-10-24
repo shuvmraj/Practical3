@@ -8,6 +8,8 @@ pipeline {
     }
 
     environment {
+        JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home'
+        PATH = "${JAVA_HOME}/bin:${PATH}"
         BACKEND_DIR = 'crud_backend/crud_backend-main'
         FRONTEND_DIR = 'crud_frontend/crud_frontend-main'
 
@@ -92,6 +94,7 @@ EOF
                 dir("${env.BACKEND_DIR}") {
                     sh '''
                         echo "Running Maven clean package..."
+                        export JAVA_HOME=${JAVA_HOME:-$(which java | xargs dirname | xargs dirname)}
                         ./mvnw clean package -DskipTests
                         
                         echo "Build artifacts:"
